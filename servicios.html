@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Angular</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+    .logo {
+     width: 60px;
+     float: left;
+     position: relative;
+     margin-bottom: 20px;} 
+</style>
+
+<body>
+    <header class="w3-container w3-pale-blue">
+        <h1 class="header w3-center"></h1>
+        <section id=logo>
+          <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a> 
+        </section>
+      </header>
+
+      <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Cerrar &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button">Inicio</a>
+        <a href="quienes-somos.html" class="w3-bar-item w3-button">¿Quienes Somos?</a>
+        <a href="servicios.html" class="w3-bar-item w3-button">Servicios</a>
+        <a href="contactenos.html" class="w3-bar-item w3-button">Contactenos</a>
+      </div>
+
+      <div id="main">
+
+        <div id="main">
+
+            <div class="w3-teal">
+              <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+              <div class="w3-container">
+                <h1 class="w3-center">Servicios</h1>
+              </div>
+            </div>
+            <script>
+                function w3_open() {
+                  document.getElementById("main").style.marginLeft = "25%";
+                  document.getElementById("mySidebar").style.width = "25%";
+                  document.getElementById("mySidebar").style.display = "block";
+                  document.getElementById("openNav").style.display = 'none';
+                }
+                function w3_close() {
+                  document.getElementById("main").style.marginLeft = "0%";
+                  document.getElementById("mySidebar").style.display = "none";
+                  document.getElementById("openNav").style.display = "inline-block";
+                }
+                </script><br>
+
+                
+  <footer class="w3-container w3-pale-blue w3-center">
+    <h5>Footer</h5>
+  </footer>
+
+<p class="w3-center" >
+   <a href="index.html">Inicio</a> -
+   <a href="quienes-somos.html">¿Quienes Somos?</a> -
+   <a href="servicios.html">Servicios</a> -
+   <a href="contactenos.html">Contactenos</a>
+</p>    
+</body>
+</html>
