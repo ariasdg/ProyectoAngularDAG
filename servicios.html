@@ -12,6 +12,19 @@
      float: left;
      position: relative;
      margin-bottom: 20px;} 
+
+     #Comentario {
+       float: right;
+       margin-top: -50px;
+       margin-right: 70px;
+     }
+
+     #Botoncoment {
+       float: right;
+       margin-top: 160px;
+       margin-right: -300px;
+     }
+
 </style>
 
 <body>
@@ -54,6 +67,35 @@
                   document.getElementById("openNav").style.display = "inline-block";
                 }
                 </script><br>
+
+
+<div class="w3-row">
+  <div class="w3-col w3-container form" style="width:400px">
+  <div class="w3-container"> 
+    <ul class="w3-ul w3-hoverable">
+      <li><a href="">Servicio 1</a></li>
+      <li><a href="">Servicio 2</a></li>
+      <li><a href="">Servicio 3</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="w3-rest w3-container">
+    <img src="images/petra.jpg" class="w3-row-padding" alt="winter" style="padding:6px; width:100%">
+    <br><br>
+    <fieldset>
+      <legend>Comentarios</legend>
+    <div>
+      <br>
+      <input name="name" placeholder="Nombre completo"></input><br><br>
+      <input name="email" placeholder="Email"></input>
+      <textarea name="mensaje" id="Comentario" cols="60" rows="10" placeholder="Comentario"></textarea><br>
+      <button class="w3-button w3-teal" id="Botoncoment">Enviar</button>
+    </div>
+  </div>
+</div>
+
+<br>
 
                 
   <footer class="w3-container w3-pale-blue w3-center">
